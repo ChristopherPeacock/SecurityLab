@@ -1,0 +1,46 @@
+# Build outputs
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Sensitive configuration
+config.json
+*.key
+*.pem
+*.pfx
+
+# AES Keys and Secrets
+**/secrets/
+**/*_key.txt
+**/*_secret.txt
+
+# Logs
+*.log
+logs/
+
+# Data
+data/
+exfil-data/
+*.dat
+
+# IDE
+.vs/
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary
+*.tmp
+*.temp
+*.swp
