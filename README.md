@@ -13,20 +13,16 @@ Tools and scripts that execute on compromised systems during post-exploitation p
 
 ### Infrastructure/
 
-Command and Control (C2) infrastructure components.
-
-- **ExfiltrationServer/** - Server-side components for receiving and processing exfiltrated data
-
 ## Architecture
 
 ```
-┌─────────────────────┐         HTTPS + AES         ┌─────────────────────┐
-│  Compromised Host   │ ───────────────────────────> │   EC2/C2 Server     │
-│                     │                               │                     │
-│ PostExploitation/   │                               │ Infrastructure/     │
-│ - File Search       │                               │ - Data Receiver     │
-│ - Data Exfil Client │                               │ - Decryption        │
-└─────────────────────┘                               └─────────────────────┘
+┌─────────────────────┐             
+│  Compromised Host   │ 
+│                     │               
+│ PostExploitation/   │              
+│ - File Search       │                           
+│ - Data Exfil Client │                          
+└─────────────────────┘   
 ```
 
 ## Usage
