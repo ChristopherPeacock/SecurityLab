@@ -51,7 +51,6 @@ See [ExfiltrationServer](./Infrastructure/ExfiltrationServer/README.md) for C2 s
 
 - **Language**: C#, PowerShell
 - **Target Platform**: Windows
-- **Infrastructure**: AWS EC2 (or similar cloud hosting)
 
 ## License
 
